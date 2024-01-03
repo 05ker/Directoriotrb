@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVA</title>
+    <link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' referrerpolicy='no-referrer' rel='stylesheet'/>
+    <!-- <link rel="stylesheet" href="css/search.css"> -->
+    <style>
+    @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap);*{list-style:none;margin:0;padding:0;box-sizing:border-box;color:#fff;font-family:"Source Sans Pro",sans-serif;text-decoration:none}:root{--main:#e21221}body{background:#0a0a0a;font-family:"Source Sans Pro",sans-serif}.padding{padding:20px}.heading{margin-bottom:20px;text-transform:capitalize}.see-all-grid{display:grid;grid-gap:10px;grid-template-columns:repeat(3,1fr)}.see-all-grid__card{overflow:hidden;aspect-ratio:2/2.8;display:block}.see-all-grid__card img{border-radius:4px;aspect-ratio:2/2.8;object-fit:cover;width:100%}.card__title{display:none}#myInput{background:#1b1e2b;width:100%;font-size:20px;font-weight:600;padding:10px 20px;border:2px solid transparent;margin-bottom:12px;border-radius:10px;outline:none;text-transform:capitalize;position:relative;margin-bottom:20px;transition:border .5s ease}#myInput:focus{border:2px solid var(--main);background:rgb(226,18,33,.1)}.animation{opacity:1;animation:fade 2s ease}@keyframes fade{0%{opacity:0}100%{opacity:1}}.top-search h2{margin-bottom:20px}.top-card{display:flex;align-items:center;justify-content:space-between;background:#1b1e2b;border-radius:10px;overflow:hidden;margin-bottom:10px}.top-card img{width:100%;aspect-ratio:3 / 1.5;object-fit:cover}.min-tittle{display:grid;grid-template-columns:150px 1fr;align-items:center;grid-gap:20px;font-size:20px;overflow:hidden}.play-btn{padding:20px}.top-title h4{text-transform:capitalize}.top-title{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}@media screen and (min-width:640px){.see-all-grid{grid-template-columns:repeat(3,1fr)}}@media screen and (min-width:768px){.see-all-grid{grid-template-columns:repeat(4,1fr)}.min-tittle{grid-template-columns:250px 1fr}}@media screen and (min-width:1024px){.see-all-grid{grid-template-columns:repeat(5,1fr)}}
+
+*{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+    </style>
+    
+    <style type='text/css'>
+/* Animation */
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes rubberBand{from{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,0.75,1)}40%{transform:scale3d(0.75,1.25,1)}50%{transform:scale3d(1.15,0.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scale3d(1,1,1)}}
+/* Say Hi to Adblock */
+#arlinablock{background:rgba(0,0,0,0.65);position:fixed;margin:auto;left:0;right:0;top:0;bottom:0;overflow:auto;z-index:999999;animation:fadeInDown 1s}
+#arlinablock .header{margin:0 0 15px 0}
+#arlinablock .inner{background:#e3482d;color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);text-align:center;width:600px;padding:40px;border-radius:5px;margin:7% auto 2% auto;animation:rubberBand 1s}
+#arlinablock button{padding:10px 20px;border:0;background:rgba(0,0,0,0.15);color:#fff;margin:20px 5px;cursor:pointer;transition:all .3s}
+#arlinablock button:hover{background:rgba(0,0,0,0.35);color:#fff;outline:none}
+#arlinablock button.active,#arlinablock button:hover.active{background:#fff;color:#222;outline:none}
+#arlinablock .fixblock{background:#fff;text-align:left;color:#000;padding:20px;height:250px;overflow:auto;line-height:30px}
+#arlinablock .fixblock div{display:none}
+#arlinablock .fixblock div.active{display:block}
+#arlinablock ol{margin-left:20px}
+@media(max-width:768px){#arlinablock .inner{width:calc(100% - 20px);margin:10px auto;padding:15px}}
+</style>
+    
+    
+    
+</head>
+<body>
+
+<div class="padding">
+
+    <input type="text" id="myInput" class="input" onkeyup="myFunction()" placeholder="Buscar Pelicula..." title="Escribe algo">
+
+    <ul class="see-all-grid" id="myUL">
+
+
+
+<li>
+            <a href="https://terabox.com/sharing/embed?surl=a-OXO2dntK6Vn6QiA6Hwug&resolution=1080&autoplay=true&mute=false&uk=4401631685067&fid=217145164085289" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w260_and_h390_bestv2/cOt8SQwrxpoTv9Bc3kyce3etkZX.jpg">
+                <span class="card__title">
+                    Blade Runner 2049
+                    </span>
+            </a>
+        </li>
+  <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=2653928688206" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/5WI0ELIwgVY71loQSZLD5qQ1Q6c.jpg">
+                <span class="card__title">
+                    Rocky (1976)
+                    </span>
+            </a>
+        </li>
+
+
+  <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=1606701091461" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/sW0tABq2gGGzdwHKhBs2hupEK11.jpg">
+                <span class="card__title">La mascara (1994)</span>
+            </a>
+        </li>
+
+  <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=352826559107" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/vTULyjAOOKZljr2iU8Ct63prPF7.jpg">
+                <span class="card__title">Corazones de hierro</span>
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=2089367964313" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/xvtRgQIRegLjsjaIkKQbh0hk3Qy.jpg">
+                <span class="card__title">La iniciación (1986)</span>
+            </a>
+        </li>
+        
+    <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=http://ok.ru/video/2218224126560" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/2UeIKPirME0l4UeUuv5TklDezR4.jpg">
+                <span class="card__title">Una Pareja Explosiva 3</span>
+            </a>
+        </li>
+
+  <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=4458364209760" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/rqquHoHee73YSV5xqAcpEf8dU2s.jpg">
+                <span class="card__title">Una Pareja Explosiva 2</span>
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://sachield.xyz/okru/ok.php?v=2218223995488" class="see-all-grid__card">
+                <img src="https://www.themoviedb.org/t/p/w188_and_h282_bestv2/kZyMWQutqBfVYFxnhypGt0YaKcD.jpg">
+                <span class="card__title">Una Pareja Explosiva</span>
+            </a>
+        </li>
+
+
+
+
+    </ul>
+
+    <div class="top-search" id="top" >
+        <h2></h2>
+        <ul>
+            <li>
+                <a href="go:REFERENCIA" class="">
+                    <div class="min-tittle">
+                    <img src="" alt="">
+                    <div class="top-title">
+                    <h4></h4>
+                    </div>
+                    </div>
+                    <div class="">
+                        <i class=""></i>
+                    </div>
+                </a>
+            </li>
+
+            
+            
+        </ul>
+    </div>
+
+</div>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            li[i].classList.add('animation');
+        } else {
+            li[i].style.display = "none";
+            li[i].classList.remove('animation');
+        }
+    }
+}
+
+let ulCards = document.getElementById('myUL');
+
+ulCards.style.display = "true"
+
+let searcher = document.getElementById('myInput');
+let topSearch = document.getElementById('top');
+
+searcher.addEventListener('keyup', () => {
+    
+    if (searcher.value != ""){
+        ulCards.style.display = "";
+        topSearch.style.display = "true";
+        
+    } else{
+            topSearch.style.display = "";
+            topSearch.classList.add('animation');
+
+            ulCards.style.display = "true";
+        }
+})
+    
+
+</script>
+
+<script type='text/javascript'> //<![CDATA[ function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cdn.rawgit.com/Arlina-Design/quasar/23207858/arlinablock.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload; //]]> </script>
+
+</body>
+</html>
